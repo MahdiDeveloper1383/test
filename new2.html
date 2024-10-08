@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new1.css">
+    <title>calculator</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="h1-1">Hello and Wellcom</h1>
+        <p id="p1">This is a simple calculator for use</p>
+    </header>
+    <main>
+        <div id="div1">
+        <p id="p2">Enter number1: <input type="number" name="number" id="number1" class="number"></p>
+        <button type="button" id="plus"  class="button" ><p id="p3">+</p></button>
+        <button type="button" id="minus" class="button" ><p id="p3">-</p></button>
+        <button type="button" id="times" class="button" ><p id="p3">×</p></button>
+        <button type="button" id="divies" class="button"><p id="p3">÷</p></button>
+        <button type="button" id="tawan" class="button"><p id="p3">x <sup>y</sup></p></button>
+        <button type="button" id="less" class="button" ><p id="p3">|</p></button>
+       <P id="p2">Enter number2: <input type="number" name="number" id="number2" class="number"></p>
+        <button type="button" id="equal"class="button"><p id="p3">=</p></button>
+        <p id="p4">Result is: </p>
+        </div>
+        <article id="article1">
+            <div id="div2">
+            <h1 id="h1-2">Sign form:</h1>
+            <p id="p5">First Name: <input type="text" name="text" id="input1" class="input1"></p>
+            <p id="p5">last Name: <input type="text" name="text" id="input2"class="input1"></p>
+            <p id="p5">Father Name: <input type="text" name="text" id="input3"class="input1"></p>
+            <p id="p5">Phone Number: <input type="number" name="number"id="input4"class="input1"></p>
+            <p id="p5">Address: <input type="text" name="Address" id="input5"class="input1"></p>
+            <p id="p5">Education: <input type="text" name="text" id="input6"class="input1"></p>
+            <p id="p5">Gmail: <input type="email" name="email" id="input7"class="input1"></p>
+            <button type="submit" id="submit1">submit</button>
+            </div>
+        </article>
+    </main>
+    <script>
+        let a;
+        let b;
+        let c;
+        let d;
+        let e;
+        let f;
+        let x;
+        let t;
+        let v;
+        let l;
+        let i;
+        let r;
+        let q;
+        let m;
+        let z;
+        let s;
+        let y;
+        let o;
+        document.getElementById("equal").onclick = function(){
+        document.getElementById("plus").onclick = function(){
+            a = document.getElementById("number1").value;
+            a = Number(a)
+            b = document.getElementById("number2").value;
+            b = Number(b)
+            c = a+b
+            c = Number(c)
+            document.getElementById("p4").innerHTML = "Result is "+c
+        }
+        document.getElementById("minus").onclick = function(){
+            d = document.getElementById("number1").value;
+            d = Number(d)
+            e = document.getElementById("number2").value;
+            e = Number(e)
+            f = d-e
+            f = Number(f)
+            document.getElementById("p4").innerHTML = "Result is "+f
+        }
+        document.getElementById("times").onclick = function(){
+            x = document.getElementById("number1").value;
+            x = Number(x)
+            t = document.getElementById("number2").value;
+            t = Number(t)
+            v = x*t
+            v = Number(v)
+            document.getElementById("p4").innerHTML = "Result is "+v
+        }
+        document.getElementById("divies").onclick = function(){
+            l = document.getElementById("number1").value;
+            l = Number(l)
+            i = document.getElementById("number2").value;
+            i = Number(i)
+            r = l/i
+            r = Number(r)
+            document.getElementById("p4").innerHTML = "Result is "+r
+        }
+        document.getElementById("tawan").onclick = function(){
+            r = document.getElementById("number1").value;
+            r = Number(r)
+            q = document.getElementById("number2").value;
+            m = Math.pow(r,q)
+            m = Number(m)
+            document.getElementById("p4").innerHTML = "Result is "+m
+        }
+        document.getElementById("less").onclick = function(){
+            z = document.getElementById("number1").value;
+            z = Number(a)
+            s = document.getElementById("number2").value;
+            s = Number(b)
+            o = z > s
+            if (o==true) {
+                console.log("True");
+            }
+            else{
+                console.log("flase");
+            }
+            o = String(o)
+            document.getElementById("p4").innerHTML = "Result is "+o
+        }
+    }
+    </script>
+    <script type="moudule" src="new1.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+.p3{
+    font-size:30px;
+    color: yellowgreen;
+}
+.mark1{
+    background-color: aquamarine;
+}
+.abbr1{
+    font-size: 20px;
+}
+.h11{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-decoration: dashed;
+    text-shadow: yellow 1px 2px 0.5px;
+    align-self: center;
+    text-align: center;
+}
+#image1{
+    width: 500px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 5px yellow solid;
+}
+.table1{
+    border: 2px solid green;
+    font-size: 40px;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    border-style: dashed;
+}
+.form2{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input1{
+    margin-left: auto;
+    margin-right: auto;
+}
+.p4{
+    font-size: 20px;
+}
+#div1{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#button2{
+    font-size: 30px;
+    width: 100px;
+    height: 40px;
+    box-shadow: 4px 6px 1.5px black;
+    border-radius: 80%;
+    background-color: aqua;
+    border: 2px green solid;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-name: ss;
+}
+#button2:hover{
+    color: yellow;
+    background-color: pink;
+    box-shadow: whitesmoke;
+    transform: rotate(360deg);
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+@keyframes ss {
+    0%{
+        transform:translateX(500px) rotate(0);
+    }
+    33%{
+        transform:translateX(-500px) rotate(90deg);
+    }
+    66%{
+        transform:translateX(500px) rotate(180deg);
+    }
+    100%{
+        transform:translateX(-500px) rotate(360deg);
+    }
+}
+#div2{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid palegoldenrod;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: ssww;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+@keyframes ssww {
+    0%{
+        transform: translateY(500px) rotate(0deg);
+    }
+    25%{
+        transform: translateY(-500px) rotate(180deg);
+    }
+    50%{
+        transform: translateY(500px) rotate(180deg);
+    }
+    75%{
+        transform: translateY(-500px) rotate(180deg);
+    }
+    100%{
+        transform: translateY(500px) rotate(180deg);
+    }
+}
+#div3{
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 100px solid greenyellow ;
+}
+#div4{
+    width: 0;
+    height: 0;
+    margin-left: atuo;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    border-right: 100px solid brown;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+#div4:hover{
+    transform: rotate(90deg);
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+#div5{
+    width: 0;
+    height: 0;
+    border-left: 100px solid rgb(79, 79, 147);
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+#div5:hover{
+    border-left: 100px solid brown;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    transform: rotate(-180deg);
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+#div6{
+    width: 185px;
+    height: 185px;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    position: relative;
+    animation-name: ssx;
+    box-shadow: 8px 6px 0.5px whitesmoke;
+}
+#h3{
+    font-size: 60px;
+    text-shadow: 2px 1px 0.5px black;
+    color: red;
+    text-align: center;
+    justify-content: center;
+}
+@keyframes ssx {
+    0%{
+        background-color: bisque;
+        transform: translateX(0) rotate(90deg);
+    }
+    33%{
+        background-color: chocolate;
+        transform: translateX(600px) translateY(600px) translateZ(200px) rotate(180deg);
+    }
+    66%{
+        background-color: crimson;
+        transform: translateX(-600px) translateY(-600px) translateZ(-200px) rotate(270deg);
+    }
+    100%{
+        background-color: aqua;
+        transform: translateX(0) rotate(360deg);
+    }
+}
